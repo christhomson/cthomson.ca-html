@@ -1,0 +1,40 @@
+html {
+	background: url('../img/bg.png') repeat;
+	font-family: 'Bitter', serif;
+}
+
+#container {
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 535px;
+	padding: 0 20px 0 20px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 375%;
+	color: #242424;
+}
+
+#overview {
+	font-size: 125%;
+	color: #050505;
+}
+
+#currently, #currently a {
+	padding-top: 0.5em;
+	color: #484848;
+	text-decoration: none;
+}
+
+/* Social links. */
+nav {
+	padding-top: 5%;
+}
+
+ul li {
+	list-style-type: none;
+	display: inline;
+	margin: 0 2px 0 2px;
+}
