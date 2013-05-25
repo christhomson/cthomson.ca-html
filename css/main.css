@@ -22,10 +22,19 @@ h1 {
 	color: #050505;
 }
 
-#currently, #currently a {
+#currently {
 	padding-top: 0.5em;
 	color: #484848;
 	text-decoration: none;
+}
+
+#currently a {
+	color: #292929;
+	text-decoration: none;
+}
+
+#currently a:hover {
+	color: #636363;
 }
 
 /* Social links. */
