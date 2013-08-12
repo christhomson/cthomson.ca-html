@@ -38,12 +38,26 @@ h1 {
 }
 
 /* Social links. */
-nav {
+.home nav {
 	padding-top: 5%;
 }
 
-ul li {
+.home ul li {
 	list-style-type: none;
 	display: inline;
 	margin: 0 2px 0 2px;
+}
+
+/* /notes */
+.notes h3 {
+	font-weight: bold;
+	font-size: 200%;
+}
+
+.notes ul li {
+	display: inline;
+}
+
+.notes ul li#template {
+	display: none;
 }
