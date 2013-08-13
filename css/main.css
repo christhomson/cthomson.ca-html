@@ -74,6 +74,7 @@ h1 {
 .notes ul {
 	margin: 30px auto auto auto;
 	width: 707px;
+	background-image: url(../img/loading.gif);
 }
 
 .notes ul li {
@@ -157,4 +158,11 @@ footer a, footer a:visited {
 	text-decoration: none;
 	color: #5F5F5F;
 	font-size: 75%;
+}
+
+#loading {
+	background: url(../img/loading.gif) no-repeat;
+	width: 32px;
+	height: 32px;
+	margin: 0 auto 30px auto;
 }
