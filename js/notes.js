@@ -9,6 +9,7 @@ $(document).ready(function() {
           $li.find('h2').text("CS 241");
           $li.find('h3').text('Foundations of Sequential Programs');
           $li.find('.time').text(new Date(documents[doc_name].timestamp).toLocaleString());
+          $li.find('a').attr('href', 'http://noteface.cthomson.ca/dl/latest/' + doc_name + '.pdf');
 
           $('#documents').append($li);
         }
