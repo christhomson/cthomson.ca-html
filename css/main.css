@@ -9,55 +9,143 @@ html {
 	margin-right: auto;
 	min-width: 535px;
 	padding: 0 20px 0 20px;
+}
+
+#container.index {
 	text-align: center;
 }
 
 h1 {
 	font-size: 375%;
 	color: #242424;
+	text-align: center;
 }
 
 #overview {
 	font-size: 125%;
 	color: #050505;
+	text-align: center;
 }
 
-#currently {
+#byline, #byline a, #byline a:visited {
+	font-size: 110%;
+	color: #050505;
+	text-decoration: none;
+	text-align: center;
+}
+
+#byline a:hover {
+	color: #3552A0;
+}
+
+#elaboration, #mistakes {
 	padding-top: 0.5em;
 	color: #484848;
 	text-decoration: none;
+	text-align: center;
 }
 
-#currently a {
+#elaboration a {
 	color: #292929;
 	text-decoration: none;
 }
 
-#currently a:hover {
+#elaboration a:hover {
 	color: #636363;
 }
 
+#mistakes a, #mistakes a:visited {
+	color: #3552A0;
+	text-decoration: none;
+}
+
 /* Social links. */
-.home nav {
+.index nav {
 	padding-top: 5%;
 }
 
-.home ul li {
+.index ul li {
 	list-style-type: none;
 	display: inline;
 	margin: 0 2px 0 2px;
 }
 
 /* /notes */
-.notes h3 {
-	font-weight: bold;
-	font-size: 200%;
+.notes ul {
+	margin: 30px auto auto auto;
+	width: 707px;
 }
 
 .notes ul li {
-	display: inline;
+	display: block;
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 75px;
+	margin: 10px;
+	padding: 15px;
+	background-color: #fff;
+	color: #1B1B1B;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	-webkit-transition: all 0.33s ease-in-out;
+	-moz-transition: all 0.33s ease-in-out;
+	transition: all 0.33s ease-in-out;
+}
+
+.notes ul li:hover {
+	-webkit-box-shadow: 0 5px 10px #ccc;
+	-moz-box-shadow: 0 5px 10px #ccc;
+	box-shadow: 0 5px 10px #ccc;
+	border: 1px solid rgba(48, 127, 193, 0.5);
+}
+
+.notes ul li i {
+	position: absolute;
+	right: 15px;
+	top: 40%;
+	font-size: 150%;
+	color: #555;
+	-webkit-transition: all 0.33s ease-in-out;
+	-moz-transition: all 0.33s;
+	transition: all 0.33s;
+}
+
+.notes ul li:hover i {
+	color: #307fc1;
 }
 
 .notes ul li#template {
 	display: none;
+}
+
+.notes h2 {
+	font-weight: bold;
+	font-size: 175%;
+}
+
+.notes h3 {
+	font-size: 95%;
+}
+
+.notes .last-modified {
+	font-size: 80%;
+	margin: auto;
+	color: rgba(37, 37, 37, 0.85);
+}
+
+footer {
+	color: #5F5F5F;
+	margin-top: 30px;
+	display: block;
+	width: 707px;
+	margin: auto;
+	text-align: center;
+	clear: both;
+}
+
+footer a, footer a:visited {
+	text-decoration: none;
+	color: #5F5F5F;
+	font-size: 75%;
 }
