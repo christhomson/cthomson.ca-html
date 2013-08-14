@@ -16,8 +16,6 @@ $(document).ready(function() {
       timeOfDay = "PM";
     }
 
-    var str = "";
-
     str += monthNames[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear();
     str += " at " + hour + ":" + date.getMinutes() + " " + timeOfDay;
 
