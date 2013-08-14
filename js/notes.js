@@ -3,6 +3,7 @@ $(document).ready(function() {
     url: 'http://noteface.cthomson.ca/documents.json',
     dataType: 'json',
     success: function(documents) {
+      $("#loading").hide();
       for (doc_name in documents) {
         if (documents.hasOwnProperty(doc_name)) {
           var $tpl = $('li#template').clone().attr('id', null);
@@ -14,12 +15,14 @@ $(document).ready(function() {
           if ($("#" + doc_name)) {
             $("#" + doc_name).append($tpl.children())
           } else {
-            $('#documents').append($tpl);
+            $tpl.attr('id', doc_name);
           }
         }
       }
 
-      $("#loading").hide();
+      if (document.location.hash) {
+        $(document.location.hash).addClass('animate');
+      }
     }
   })
 });
