@@ -43,6 +43,8 @@ $(document).ready(function() {
           } else {
             $tpl.attr('id', doc_name);
           }
+
+          $("#" + doc_name).addClass("populated");
         }
       }
 
