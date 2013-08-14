@@ -1,6 +1,6 @@
 html {
 	background: url('../img/bg.png') repeat;
-	font-family: 'Bitter', serif;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 #container {
@@ -19,6 +19,15 @@ h1 {
 	font-size: 375%;
 	color: #242424;
 	text-align: center;
+	line-height: 100%;
+}
+
+.index h1 {
+	font-weight: 700;
+}
+
+.notes h1 {
+	font-weight: 600;
 }
 
 #overview {
@@ -28,7 +37,8 @@ h1 {
 }
 
 #byline, #byline a, #byline a:visited {
-	font-size: 110%;
+	font-size: 105%;
+	font-weight: 300;
 	color: #050505;
 	text-decoration: none;
 	text-align: center;
@@ -82,7 +92,6 @@ h1 {
 	position: relative;
 	float: left;
 	width: 300px;
-	height: 75px;
 	margin: 10px;
 	padding: 15px;
 	background-color: #fff;
@@ -113,7 +122,7 @@ h1 {
 .notes ul li i {
 	position: absolute;
 	right: 15px;
-	top: 40%;
+	top: 37.5%;
 	font-size: 150%;
 	color: #555;
 	-webkit-transition: all 0.33s ease-in-out;
@@ -131,6 +140,7 @@ h1 {
 
 .notes h2 {
 	font-weight: bold;
+	line-height: 100%;
 	font-size: 175%;
 }
 
@@ -140,6 +150,7 @@ h1 {
 
 .notes .last-modified {
 	font-size: 80%;
+	font-weight: 300;
 	margin: auto;
 	color: rgba(37, 37, 37, 0.85);
 }
