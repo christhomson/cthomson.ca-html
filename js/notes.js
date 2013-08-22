@@ -1,4 +1,15 @@
 $(document).ready(function() {
+  moment.lang('en', {
+    calendar: {
+      lastDay: '[Yesterday at] LT',
+      sameDay: '[Today at] LT',
+      nextDay: '[Tomorrow at] LT',
+      lastWeek: '[Last] dddd [at] LT',
+      nextWeek: 'dddd [at] LT',
+      sameElse: 'L [at ] LT'
+    }
+  })
+
   $.ajax({
     url: 'http://noteface.cthomson.ca/documents.json',
     dataType: 'json',
