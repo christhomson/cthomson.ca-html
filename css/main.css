@@ -72,6 +72,32 @@ h1 {
 /* Social links. */
 .index nav {
 	padding-top: 5%;
+	font-size: 33px;
+}
+
+.index nav li a, a:visited {
+	-webkit-transition: color 0.5s;
+	color: rgba(103,103,103,0.71);
+}
+
+.index nav li .icon-github-sign:hover {
+	color: black;
+}
+
+.index nav li .icon-twitter-sign:hover {
+	color: #00bef6;
+}
+
+.index nav li .icon-linkedin-sign:hover {
+	color: #1b86bc;
+}
+
+.index nav li .icon-envelope {
+	font-size: 105%;
+}
+
+.index nav li .icon-envelope:hover {
+	color: #d32023;
 }
 
 .index ul li {
