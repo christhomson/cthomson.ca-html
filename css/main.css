@@ -77,6 +77,8 @@ h1 {
 
 .index nav li a, a:visited {
 	-webkit-transition: color 0.5s;
+	-moz-transition: color 0.5s;
+	transition: color 0.5s;
 	color: rgba(103,103,103,0.71);
 }
 
