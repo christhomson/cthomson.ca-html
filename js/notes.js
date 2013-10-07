@@ -20,6 +20,11 @@ $(document).ready(function() {
           var $tpl = $('li#template').clone().attr('id', null);
           var date = new Date(documents[doc_name].timestamp);
           $tpl.find('h2').text(documents[doc_name].course.code);
+
+          if (documents[doc_name].course.term !== undefined) {
+            $tpl.find('h2').append(" (" + documents[doc_name].course.term + ")");
+          }
+
           $tpl.find('h3').text(documents[doc_name].course.name);
           $tpl.find('.time').text(moment(date).calendar());
           $tpl.find('a').attr('href', 'http://noteface.cthomson.ca/dl/latest/' + doc_name + '.pdf');
