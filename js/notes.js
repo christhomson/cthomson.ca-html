@@ -11,7 +11,7 @@ $(document).ready(function() {
   })
 
   $.ajax({
-    url: 'http://noteface.cthomson.ca/documents.json',
+    url: 'http://notes.cthomson.ca/documents.json',
     dataType: 'json',
     success: function(documents) {
       $("#loading").hide();
@@ -27,7 +27,7 @@ $(document).ready(function() {
 
           $tpl.find('h3').text(documents[doc_name].course.name);
           $tpl.find('.time').text(moment(date).calendar());
-          $tpl.find('a').attr('href', 'http://noteface.cthomson.ca/dl/latest/' + doc_name + '.pdf');
+          $tpl.find('a').attr('href', 'http://notes.cthomson.ca/dl/latest/' + doc_name + '.pdf');
 
           if ($("#" + doc_name)) {
             $("#" + doc_name).append($tpl.children())
