@@ -2,3 +2,4 @@ name: Chris Thomson
 markdown: redcarpet
 pygments: true
 gems: ['jekyll/itafroma/indent_filter']
+exclude: ['Capfile', 'config', 'Gemfile', 'Gemfile.lock']
