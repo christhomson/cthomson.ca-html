@@ -2,7 +2,7 @@ lock '3.1.0'
 
 set :stage, :production
 set :application, 'cthomson.ca'
-set :repo_url, 'git@github.com:christhomson/christhomson.github.com.git'
+set :repo_url, 'git@github.com:christhomson/cthomson.ca.git'
 
 set :deploy_to, "/home/deploy/apps/#{fetch(:application)}"
 
