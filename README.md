@@ -4,5 +4,6 @@ cthomson.ca
 
 ## Getting started
 1. `git clone git@github.com:christhomson/cthomson.ca.git`
-2. `bundle install`
-3. `bundle exec jekyll build --watch`
+2. `cd cthomson.ca`
+3. `bundle install`
+4. `bundle exec jekyll build --watch`
