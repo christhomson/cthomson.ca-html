@@ -1,0 +1,9 @@
+---
+require:
+- jekyll-compass
+project_path: "/Users/chris/Dropbox/Development/cthomson.ca/."
+http_path: "/"
+css_dir: css
+sass_dir: _sass
+images_dir: images
+javascripts_dir: javascripts
