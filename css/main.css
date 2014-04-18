@@ -3,7 +3,7 @@ html {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
-#container {
+.container {
   margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
@@ -11,7 +11,7 @@ html {
   padding: 0 20px 0 20px;
 }
 
-#container.index {
+#index {
   text-align: center;
 }
 
@@ -22,11 +22,11 @@ h1 {
   line-height: 100%;
 }
 
-.index h1 {
+#index h1 {
   font-weight: 700;
 }
 
-.notes h1 {
+#notes h1 {
   font-weight: 600;
 }
 
@@ -70,51 +70,51 @@ h1 {
 }
 
 /* Social links. */
-.index nav {
+#index nav {
   padding-top: 5%;
   font-size: 33px;
 }
 
-.index nav li a, a:visited {
+#index nav li a, a:visited {
   -webkit-transition: color 0.5s;
   -moz-transition: color 0.5s;
   transition: color 0.5s;
   color: rgba(103,103,103,0.71);
 }
 
-.index nav li .icon-github-sign:hover {
+#index nav li .icon-github-sign:hover {
   color: black;
 }
 
-.index nav li .icon-twitter-sign:hover {
+#index nav li .icon-twitter-sign:hover {
   color: #00bef6;
 }
 
-.index nav li .icon-linkedin-sign:hover {
+#index nav li .icon-linkedin-sign:hover {
   color: #1b86bc;
 }
 
-.index nav li .icon-envelope {
+#index nav li .icon-envelope {
   font-size: 105%;
 }
 
-.index nav li .icon-envelope:hover {
+#index nav li .icon-envelope:hover {
   color: #d32023;
 }
 
-.index ul li {
+#index ul li {
   list-style-type: none;
   display: inline;
   margin: 0 2px 0 2px;
 }
 
 /* /notes */
-.notes ul {
+#notes ul {
   margin: 30px auto auto auto;
   width: 707px;
 }
 
-.notes ul li {
+#notes ul li {
   display: none;
   position: relative;
   float: left;
@@ -130,11 +130,11 @@ h1 {
   transition: all 0.33s ease-in-out;
 }
 
-.notes ul li.populated {
+#notes ul li.populated {
   display: block;
 }
 
-.notes ul li a {
+#notes ul li a {
   position: absolute;
   top: 0;
   left: 0;
@@ -143,14 +143,14 @@ h1 {
   text-decoration: none;
 }
 
-.notes ul li:hover {
+#notes ul li:hover {
   -webkit-box-shadow: 0 5px 10px #ccc;
   -moz-box-shadow: 0 5px 10px #ccc;
   box-shadow: 0 5px 10px #ccc;
   border: 1px solid rgba(48, 127, 193, 0.5);
 }
 
-.notes ul li i {
+#notes ul li i {
   position: absolute;
   right: 15px;
   top: 37.5%;
@@ -161,25 +161,25 @@ h1 {
   transition: all 0.33s;
 }
 
-.notes ul li:hover i {
+#notes ul li:hover i {
   color: #307fc1;
 }
 
-.notes ul li#template {
+#notes ul li#template {
   display: none;
 }
 
-.notes h2 {
+#notes h2 {
   font-weight: bold;
   line-height: 100%;
   font-size: 175%;
 }
 
-.notes h3 {
+#notes h3 {
   font-size: 95%;
 }
 
-.notes .last-modified {
+#notes .last-modified {
   font-size: 90%;
   font-weight: 300;
   margin: auto;
