@@ -1,256 +1,256 @@
 html {
-	background: #FCFCFC;
-	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  background: #FCFCFC;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 #container {
-	margin-top: 10%;
-	margin-left: auto;
-	margin-right: auto;
-	min-width: 535px;
-	padding: 0 20px 0 20px;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 535px;
+  padding: 0 20px 0 20px;
 }
 
 #container.index {
-	text-align: center;
+  text-align: center;
 }
 
 h1 {
-	font-size: 375%;
-	color: #242424;
-	text-align: center;
-	line-height: 100%;
+  font-size: 375%;
+  color: #242424;
+  text-align: center;
+  line-height: 100%;
 }
 
 .index h1 {
-	font-weight: 700;
+  font-weight: 700;
 }
 
 .notes h1 {
-	font-weight: 600;
+  font-weight: 600;
 }
 
 #overview {
-	font-size: 125%;
-	color: #050505;
-	text-align: center;
+  font-size: 125%;
+  color: #050505;
+  text-align: center;
 }
 
 #byline, #byline a, #byline a:visited {
-	font-size: 105%;
-	font-weight: 300;
-	color: #050505;
-	text-decoration: none;
-	text-align: center;
+  font-size: 105%;
+  font-weight: 300;
+  color: #050505;
+  text-decoration: none;
+  text-align: center;
 }
 
 #byline a:hover {
-	color: #3552A0;
+  color: #3552A0;
 }
 
 #elaboration, #mistakes {
-	padding-top: 0.5em;
-	color: #484848;
-	text-decoration: none;
-	text-align: center;
+  padding-top: 0.5em;
+  color: #484848;
+  text-decoration: none;
+  text-align: center;
 }
 
 #elaboration a {
-	color: #292929;
-	text-decoration: none;
+  color: #292929;
+  text-decoration: none;
 }
 
 #elaboration a:hover {
-	color: #636363;
+  color: #636363;
 }
 
 #mistakes a, #mistakes a:visited {
-	color: #3552A0;
-	text-decoration: none;
+  color: #3552A0;
+  text-decoration: none;
 }
 
 /* Social links. */
 .index nav {
-	padding-top: 5%;
-	font-size: 33px;
+  padding-top: 5%;
+  font-size: 33px;
 }
 
 .index nav li a, a:visited {
-	-webkit-transition: color 0.5s;
-	-moz-transition: color 0.5s;
-	transition: color 0.5s;
-	color: rgba(103,103,103,0.71);
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  transition: color 0.5s;
+  color: rgba(103,103,103,0.71);
 }
 
 .index nav li .icon-github-sign:hover {
-	color: black;
+  color: black;
 }
 
 .index nav li .icon-twitter-sign:hover {
-	color: #00bef6;
+  color: #00bef6;
 }
 
 .index nav li .icon-linkedin-sign:hover {
-	color: #1b86bc;
+  color: #1b86bc;
 }
 
 .index nav li .icon-envelope {
-	font-size: 105%;
+  font-size: 105%;
 }
 
 .index nav li .icon-envelope:hover {
-	color: #d32023;
+  color: #d32023;
 }
 
 .index ul li {
-	list-style-type: none;
-	display: inline;
-	margin: 0 2px 0 2px;
+  list-style-type: none;
+  display: inline;
+  margin: 0 2px 0 2px;
 }
 
 /* /notes */
 .notes ul {
-	margin: 30px auto auto auto;
-	width: 707px;
+  margin: 30px auto auto auto;
+  width: 707px;
 }
 
 .notes ul li {
-	display: none;
-	position: relative;
-	float: left;
-	width: 300px;
-	margin: 10px;
-	padding: 15px;
-	background-color: #f8f8f8;
-	color: #1B1B1B;
-	border: 1px solid #ccc;
-	cursor: pointer;
-	-webkit-transition: all 0.33s ease-in-out;
-	-moz-transition: all 0.33s ease-in-out;
-	transition: all 0.33s ease-in-out;
+  display: none;
+  position: relative;
+  float: left;
+  width: 300px;
+  margin: 10px;
+  padding: 15px;
+  background-color: #f8f8f8;
+  color: #1B1B1B;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  -webkit-transition: all 0.33s ease-in-out;
+  -moz-transition: all 0.33s ease-in-out;
+  transition: all 0.33s ease-in-out;
 }
 
 .notes ul li.populated {
-	display: block;
+  display: block;
 }
 
 .notes ul li a {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
 }
 
 .notes ul li:hover {
-	-webkit-box-shadow: 0 5px 10px #ccc;
-	-moz-box-shadow: 0 5px 10px #ccc;
-	box-shadow: 0 5px 10px #ccc;
-	border: 1px solid rgba(48, 127, 193, 0.5);
+  -webkit-box-shadow: 0 5px 10px #ccc;
+  -moz-box-shadow: 0 5px 10px #ccc;
+  box-shadow: 0 5px 10px #ccc;
+  border: 1px solid rgba(48, 127, 193, 0.5);
 }
 
 .notes ul li i {
-	position: absolute;
-	right: 15px;
-	top: 37.5%;
-	font-size: 150%;
-	color: #555;
-	-webkit-transition: all 0.33s ease-in-out;
-	-moz-transition: all 0.33s;
-	transition: all 0.33s;
+  position: absolute;
+  right: 15px;
+  top: 37.5%;
+  font-size: 150%;
+  color: #555;
+  -webkit-transition: all 0.33s ease-in-out;
+  -moz-transition: all 0.33s;
+  transition: all 0.33s;
 }
 
 .notes ul li:hover i {
-	color: #307fc1;
+  color: #307fc1;
 }
 
 .notes ul li#template {
-	display: none;
+  display: none;
 }
 
 .notes h2 {
-	font-weight: bold;
-	line-height: 100%;
-	font-size: 175%;
+  font-weight: bold;
+  line-height: 100%;
+  font-size: 175%;
 }
 
 .notes h3 {
-	font-size: 95%;
+  font-size: 95%;
 }
 
 .notes .last-modified {
-	font-size: 90%;
-	font-weight: 300;
-	margin: auto;
-	color: rgba(37, 37, 37, 0.85);
+  font-size: 90%;
+  font-weight: 300;
+  margin: auto;
+  color: rgba(37, 37, 37, 0.85);
 }
 
 footer {
-	color: #5F5F5F;
-	margin-top: 30px;
-	display: block;
-	width: 707px;
-	margin: auto;
-	text-align: center;
-	clear: both;
+  color: #5F5F5F;
+  margin-top: 30px;
+  display: block;
+  width: 707px;
+  margin: auto;
+  text-align: center;
+  clear: both;
 }
 
 footer a, footer a:visited {
-	text-decoration: none;
-	color: #5F5F5F;
-	font-size: 75%;
+  text-decoration: none;
+  color: #5F5F5F;
+  font-size: 75%;
 }
 
 #loading {
-	background: url(../img/loading.gif) no-repeat;
-	width: 32px;
-	height: 32px;
-	margin: 0 auto 30px auto;
+  background: url(../img/loading.gif) no-repeat;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto 30px auto;
 }
 
 /* Animation for a particular course */
 .animate {
-	-webkit-animation-name: swing;
-	-webkit-animation-duration: 0.5s;
-	-moz-animation-name: swing;
-	-moz-animation-duration: 0.5s;
-	-o-animation-name: swing;
-	-o-animation-duration: 0.5s;
-	-ms-animation-duration: 0.5s;
-	animation-name: swing;
-	animation-duration: 0.5s;
+  -webkit-animation-name: swing;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-name: swing;
+  -moz-animation-duration: 0.5s;
+  -o-animation-name: swing;
+  -o-animation-duration: 0.5s;
+  -ms-animation-duration: 0.5s;
+  animation-name: swing;
+  animation-duration: 0.5s;
 }
 
 @-webkit-keyframes swing {
-	20%, 40%, 60%, 80%, 100% { -webkit-transform-origin: top center; }
-	20% { -webkit-transform: rotate(10deg); }
-	40% { -webkit-transform: rotate(-7deg); }
-	60% { -webkit-transform: rotate(3deg); }
-	80% { -webkit-transform: rotate(-3deg); }
-	100% { -webkit-transform: rotate(0deg); }
+  20%, 40%, 60%, 80%, 100% { -webkit-transform-origin: top center; }
+  20% { -webkit-transform: rotate(10deg); }
+  40% { -webkit-transform: rotate(-7deg); }
+  60% { -webkit-transform: rotate(3deg); }
+  80% { -webkit-transform: rotate(-3deg); }
+  100% { -webkit-transform: rotate(0deg); }
 }
 
 @-moz-keyframes swing {
-	20% { -moz-transform: rotate(10deg); }
-	40% { -moz-transform: rotate(-7deg); }
-	60% { -moz-transform: rotate(3deg); }
-	80% { -moz-transform: rotate(-3deg); }
-	100% { -moz-transform: rotate(0deg); }
+  20% { -moz-transform: rotate(10deg); }
+  40% { -moz-transform: rotate(-7deg); }
+  60% { -moz-transform: rotate(3deg); }
+  80% { -moz-transform: rotate(-3deg); }
+  100% { -moz-transform: rotate(0deg); }
 }
 
 @-o-keyframes swing {
-	20% { -o-transform: rotate(10deg); }
-	40% { -o-transform: rotate(-7deg); }
-	60% { -o-transform: rotate(3deg); }
-	80% { -o-transform: rotate(-3deg); }
-	100% { -o-transform: rotate(0deg); }
+  20% { -o-transform: rotate(10deg); }
+  40% { -o-transform: rotate(-7deg); }
+  60% { -o-transform: rotate(3deg); }
+  80% { -o-transform: rotate(-3deg); }
+  100% { -o-transform: rotate(0deg); }
 }
 
 @keyframes swing {
-	20% { transform: rotate(10deg); }
-	40% { transform: rotate(-7deg); }
-	60% { transform: rotate(3deg); }
-	80% { transform: rotate(-3deg); }
-	100% { transform: rotate(0deg); }
+  20% { transform: rotate(10deg); }
+  40% { transform: rotate(-7deg); }
+  60% { transform: rotate(3deg); }
+  80% { transform: rotate(-3deg); }
+  100% { transform: rotate(0deg); }
 }
