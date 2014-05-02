@@ -21,6 +21,18 @@ html {
 #index {
   text-align: center;
 
+  a {
+    text-decoration: none;
+
+    &#shopify {
+      color: #96bf48;
+    }
+
+    &#uwaterloo {
+      color: #fcd450;
+    }
+  }
+
   h1 {
     font-weight: 700;
   }
@@ -36,7 +48,7 @@ html {
     font-size: 33px;
   }
 
-  nav li a, a:visited {
+  nav li a, nav li a:visited {
     -webkit-transition: color 0.5s;
     -moz-transition: color 0.5s;
     transition: color 0.5s;
