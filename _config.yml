@@ -1,6 +1,6 @@
 name: Chris Thomson
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 gems:
   - jekyll/itafroma/indent_filter
   - jekyll-compass
