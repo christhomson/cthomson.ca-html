@@ -11,7 +11,7 @@ $(document).ready(function() {
   })
 
   $.ajax({
-    url: 'http://notes.cthomson.ca/documents.json',
+    url: 'https://notes.cthomson.ca/documents.json',
     dataType: 'json',
     success: function(documents) {
       $("#loading").hide();
