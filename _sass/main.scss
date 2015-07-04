@@ -4,7 +4,7 @@ html {
 }
 
 .container {
-  margin-top: 10%;
+  margin-top: 5%;
   margin-left: auto;
   margin-right: auto;
   padding: 0 20px 0 20px;
@@ -34,17 +34,24 @@ html {
 
   h1 {
     font-weight: 700;
+    font-size: 150%;
+    margin-bottom: 10px;
   }
 
   #overview {
-    font-size: 125%;
     color: #050505;
     text-align: center;
   }
 
   nav {
-    padding-top: 5%;
-    font-size: 33px;
+    padding-top: 2.5%;
+    font-size: 175%;
+  }
+
+  img {
+    margin-bottom: 10px;
+    height: 100px;
+    width: 100px;
   }
 
   nav li a, nav li a:visited {
