@@ -7,3 +7,7 @@ cthomson.ca
 2. `cd cthomson.ca`
 3. `bundle install`
 4. `bundle exec jekyll build --watch`
+
+## Deploying
+
+`bundle exec cap production deploy`
