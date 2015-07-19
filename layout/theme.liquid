@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{ page.title }}</title>
+    <title>{{ page_title }}</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="author" content="Chris Thomson /">
-    <meta name="description" content="{{page.description}}">
+    {% if page_description %}
+      <meta name="description" content="{{ page_description }}">
+    {% endif %}
 
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/yui/3.18.0/cssreset/cssreset-min.css" />
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="{{ 'main.scss' | asset_url }}" />
 
     <!-- OpenID -->
     <link rel="openid2.provider" href="https://www.google.com/accounts/o8/ud?source=profiles">
@@ -21,11 +23,13 @@
       var analytics=analytics||[];(function(){var e=["identify","track","trackLink","trackForm","trackClick","trackSubmit","page","pageview","ab","alias","ready","group"],t=function(e){return function(){analytics.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)analytics[e[n]]=t(e[n])})(),analytics.load=function(e){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d2dq2ahtl5zl1z.cloudfront.net/analytics.js/v1/"+e+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
       analytics.load("qnz8tb8lff");
     </script>
+
+    {{ content_for_header }}
   </head>
 
   <body>
-    <div id="{{page.id}}" class="container">
-      {{ content | indent: 6 }}
+    <div id="{{ page_title | handle }}" class="container">
+      {{ content_for_layout }}
     </div>
   </body>
 </html>
